@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator!</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+<body>
+    <div class="cal">
+        <form class="cal-form" name="forms">
+            <input type="text" class="cal_screen" name="output" readonly>
+            </input>
+        <div class="cal_buttons">
+            <div class="cal_buttons__one">
+                <input type="button" class="buttons cal_buttons-num" value="7" onclick="document.forms.output.value+='7'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="8" onclick="document.forms.output.value+='8'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="9" onclick="document.forms.output.value+='9'"></input>
+                <input type="button" class="buttons cal_buttons-op" value="/" onclick="document.forms.output.value+='/'"></input>
+            </div>
+            <div class="cal_buttons__two">
+                <input type="button" class="buttons cal_buttons-num" value="4" onclick="document.forms.output.value+='4'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="5" onclick="document.forms.output.value+='5'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="6" onclick="document.forms.output.value+='6'"></input>
+                <input type="button" class="buttons cal_buttons-op" value="*" onclick="document.forms.output.value+='*'"></input>
+            </div>
+            <div class="cal_buttons__three">
+                <input type="button" class="buttons cal_buttons-num" value="1" onclick="document.forms.output.value+='1'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="2" onclick="document.forms.output.value+='2'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="3" onclick="document.forms.output.value+='3'"></input>
+                <input type="button" class="buttons cal_buttons-op" value="-" onclick="document.forms.output.value+='-'"></input>
+            </div>
+            <div class="cal_buttons__four">
+                <input type="button" class="buttons cal_buttons-num" value="0" onclick="document.forms.output.value+='0'"></input>
+                <input type="button" class="buttons cal_buttons-num" value="." onclick="document.forms.output.value+='.'"></input>
+                <input type="button" class="buttons cal_buttons-op" value="+" onclick="document.forms.output.value+='+'"></input>
+                <input type="button" class="buttons cal_buttons-op result" value="=" onclick="document.forms.output.value=eval(document.forms.output.value)"></input>
+            </div>
+        </div>
+        </form>
+        
+    </div>
+
+
+    <script src="cal.js"></script>
+    <script src="https://kit.fontawesome.com/1888ddfc77.js" crossorigin="anonymous"></script>
+</body>

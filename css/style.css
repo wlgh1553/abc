@@ -1,0 +1,57 @@
+body{
+    background-color: #ff8f8e;
+    margin: 40px;
+}
+.cal{
+    height:340px;
+    width:290px;
+    background-color: #8095a6;
+    border-radius: 20px;
+    border:3px black solid;
+    box-shadow: 2px 2px 0px 2px white inset;
+}
+
+.cal_screen{
+    background-color: #f1f1f1;
+    height:90px;
+    width:260px;
+    margin-top: 30px;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    border:4px solid black;
+    box-shadow: 3px 3px 0px 3px #8c919c inset;
+    text-align: right;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.cal_buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cal_buttons-num,.cal_buttons-op{
+    background-color: #8095a6;
+    border-radius: 5px;
+    font-size: 23px;
+    margin:6px 6px 6px 6px;
+    width:52px;
+    height:37px;
+    border:3px solid black;
+    box-shadow: 1px 1px 0px 1px white inset;
+}
+
+.buttons:hover{
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 0px 1px rgb(139, 135, 135) inset;
+}
+
+.buttons:active{
+    background-color: #8c919c;
+    box-shadow: 1.4px 1.4px 0px 1.4px rgb(110, 110, 110) inset;
+}
+
+.cal_screen{
+    font-size: 20px;
+}
